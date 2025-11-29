@@ -1,0 +1,24 @@
+services:
+  grammar-uncertainty:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      # Mount your data directory here
+      - ./data:/data
+      # Mount sample folders for testing
+      - ./samplesmtfolder:/data/samplesmtfolder
+      - ./sampleprologfolder:/data/sampleprologfolder
+      # Mount experiment data and scripts
+      - ./smtlogs:/app/smtlogs
+      - ./experiments:/app/experiments
+    environment:
+      - LOG_LEVEL=info
+    restart: unless-stopped
+
+  # Optional: Run analysis directly (uncomment and customize)
+  # analyzer:
+  #   build: .
+  #   volumes:
+  #     - ./data:/data
+  #   command: grammar-uncertainty analyze /data/samplesmtfolder --output /data/results.json
