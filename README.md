@@ -6,11 +6,17 @@ PCFG-based uncertainty quantification for programs. Extracts probabilistic conte
 
 ```bash
 pip install -e .
-# or
-docker-compose up
 ```
 
-## Usage
+Or with Docker:
+
+```bash
+docker compose build
+```
+
+## Quick Start
+
+### Python API
 
 ```python
 from grammar_uncertainty import GrammarAnalyzer
@@ -19,11 +25,42 @@ result = GrammarAnalyzer(grammar="smtlib").analyze("/path/to/programs")
 print(result.uncertainty.grammar_entropy, result.uncertainty.perplexity)
 ```
 
+### CLI
+
 ```bash
+# Setup grammar (downloads ANTLR grammar and generates parser)
 grammar-uncertainty setup smtlib
+
+# Analyze a folder of programs
 grammar-uncertainty analyze ./programs --grammar smtlib --output results.json
+
+# Start the API server
 grammar-uncertainty serve --port 8000
 ```
+
+### Docker
+
+```bash
+# Run CLI commands
+docker compose run --rm grammar-uncertainty grammar-uncertainty analyze /data/samplesmtfolder --grammar smtlib
+
+# Start API server
+docker compose up
+```
+
+## Experiments
+
+Run uncertainty metric evaluation on SMT datasets:
+
+```bash
+# List available datasets
+docker compose run --rm grammar-uncertainty python -m experiments list-datasets smtlogs
+
+# Run analysis on a dataset
+docker compose run --rm grammar-uncertainty python -m experiments run smtlogs/ProofWriter/03-mini/200-100/o3-mini-200-100
+```
+
+See [experiments/README.md](experiments/README.md) for details.
 
 ## Supported Grammars
 
@@ -73,5 +110,3 @@ url={https://openreview.net/forum?id=QfKpJ00t2L}
 ## License
 
 MIT
-
-
