@@ -5,7 +5,7 @@ build-backend = "hatchling.build"
 [project]
 name = "grammar-uncertainty"
 version = "0.1.0"
-description = "NeurIPS 2025, "Grammars of Formal Uncertainty". Analyze uncertainty in autoformalization by modeling formal grammars as probabilistic context-free grammars (PCFGs)."
+description = 'NeurIPS 2025, "Grammars of Formal Uncertainty". Analyze uncertainty in autoformalization by modeling formal grammars as probabilistic context-free grammars (PCFGs).'
 readme = "README.md"
 license = {text = "MIT"}
 requires-python = ">=3.10"

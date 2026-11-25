@@ -1,0 +1,15 @@
+- id: "GrammarsofFormalUncertainty:0.1.0"
+  owner: "Debargha Ganguly"
+  primaryThrust: "core/FoundationAI"
+  name: "Grammars of Formal Uncertainty"
+  status: "AlphaRelease"
+  description: "Grammars of Formal Uncertainty uses probabilistic context-free grammars to estimate uncertainty in generated code and formal reasoning tasks."
+  componentVersion: "0.1.0"
+  targetIcicleRelease: None
+  licenseUrl: "https://github.com/ICICLE-ai/grammars-formal-uncertainty?tab=MIT-1-ov-file"
+  publicAccess: true
+  sourceCodeUrl: "https://github.com/ICICLE-ai/grammars-formal-uncertainty"
+  codeReviewConducted: false
+  testsWritten: false
+  developerDocumentationAvailable: true
+  trainingTutorialsAvailable: true

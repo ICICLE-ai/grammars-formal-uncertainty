@@ -1,5 +1,33 @@
 # Grammars of Formal Uncertainty
 
+<!-- ICICLE metadata start -->
+Grammars of Formal Uncertainty uses probabilistic context-free grammars to estimate uncertainty in generated code and formal reasoning tasks.
+
+**Tags:** Foundation-AI
+
+### License
+
+[MIT](LICENSE)
+
+## References
+
+- [NeurIPS paper](https://openreview.net/attachment?id=QfKpJ00t2L&name=pdf)
+- [Experiment guide](experiments/README.md)
+- [Upstream repository](https://github.com/DebarghaG/grammars-formal-uncertainty)
+
+## Acknowledgements
+
+*National Science Foundation (NSF) funded AI institute for Intelligent Cyberinfrastructure with Computational Learning in the Environment (ICICLE) (OAC 2112606)*
+
+## Issue reporting
+
+Report issues on [GitHub](https://github.com/DebarghaG/grammars-formal-uncertainty/issues).
+
+---
+
+# How-To Guides
+<!-- ICICLE metadata end -->
+
 PCFG-based uncertainty quantification for programs. Extracts probabilistic context-free grammars from source code and computes entropy metrics.
 
 ## Install
