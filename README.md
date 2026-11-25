@@ -5,6 +5,8 @@ Grammars of Formal Uncertainty uses probabilistic context-free grammars to estim
 
 **Tags:** Foundation-AI
 
+> This ICICLE fork tracks [`DebarghaG/grammars-formal-uncertainty`](https://github.com/DebarghaG/grammars-formal-uncertainty). Send code contributions to [upstream pull requests](https://github.com/DebarghaG/grammars-formal-uncertainty/pulls) and report bugs or feature requests in [upstream issues](https://github.com/DebarghaG/grammars-formal-uncertainty/issues).
+
 ### License
 
 [MIT](LICENSE)

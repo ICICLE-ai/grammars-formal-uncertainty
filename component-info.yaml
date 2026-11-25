@@ -1,3 +1,5 @@
+# Canonical source: https://github.com/DebarghaG/grammars-formal-uncertainty
+# Project contributions: https://github.com/DebarghaG/grammars-formal-uncertainty/pulls
 - id: "GrammarsofFormalUncertainty:0.1.0"
   owner: "Debargha Ganguly"
   primaryThrust: "core/FoundationAI"
